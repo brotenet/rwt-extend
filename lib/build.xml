@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="zip-test" default="zip" basedir=".">
+
+	<target name="zip">
+		<zip destfile="rwt-ext-complete.jar">
+			<zipgroupfileset dir="." includes="*.jar" />
+			<exclude name="META-INF/*.SF" />
+			<exclude name="META-INF/*.DSA" />
+			<exclude name="META-INF/*.RSA" />
+		</zip>
+	</target>
+</project>
